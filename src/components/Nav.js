@@ -4,7 +4,7 @@ import style from './Nav.module.css'
 export default function Nav() {
   return (
     <nav>
-        <ul>
+        <ul className='container'>
             <li>Home</li>
             <li>My favourite</li>
         </ul>

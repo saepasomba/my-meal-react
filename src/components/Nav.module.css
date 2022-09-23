@@ -1,8 +1,12 @@
 nav {
+    position: fixed;
+    top: 0;
     width: 100vw;
     background-color: #FFC4C4;
     color: #850E35;
     height: 3rem;
+    overflow: hidden;
+    z-index: 1;
 }
 
 nav ul {
@@ -21,7 +25,7 @@ nav li {
     justify-content: center;
     width: 7.5rem;
     height: 100%;
-    transition: 100ms ease;
+    transition: 200ms ease;
 }
 
 nav ul li:hover  {

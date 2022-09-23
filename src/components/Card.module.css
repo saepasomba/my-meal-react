@@ -1,0 +1,30 @@
+.mealCard {
+    width: 10rem;
+    background-color: #FFF5E4;
+    text-align: center;
+    transition: 150ms ease;
+    border-radius: 25px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.mealCard p {
+    font-size: 0.8rem;
+    max-width: calc(80%);
+    margin: 0 auto;
+    padding: 1rem 0.8rem;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.mealCard img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.mealCard:hover {
+    scale: 1.1;
+    transform: rotateZ(2deg);
+}
