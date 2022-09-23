@@ -1,0 +1,30 @@
+nav {
+    width: 100vw;
+    background-color: #FFC4C4;
+    color: #850E35;
+    height: 3rem;
+}
+
+nav ul {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 0rem;
+    align-items: center;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7.5rem;
+    height: 100%;
+    transition: 100ms ease;
+}
+
+nav ul li:hover  {
+    background-color: #FFF5E4;
+    cursor: pointer;
+}
