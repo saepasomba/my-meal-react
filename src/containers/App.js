@@ -1,17 +1,19 @@
 import './App.css';
 import axios from 'axios';
 
-import Nav from '../components/Nav'
 import Card from '../components/Card';
 import Searchbar from '../components/Searchbar';
 
 import CardList from './CardList';
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function App() {
 
   const [meals, setMeals] = useState([])
   const [searchBar, setSearchBar] = useState('')
+  
+  const navigate = useNavigate()
 
   let mealsToShow = JSON.parse(JSON.stringify(meals))
 
@@ -33,18 +35,21 @@ function App() {
     setSearchBar(keyword)
   }
 
+  const navigateToDetail = (mealID) => {
+    navigate(`detail/${mealID}`)
+  }
+
   useEffect(() => {
     getData()
   }, [])
 
   return (
     <div className="App">
-      <Nav />
       <Searchbar onChange={onChange} />
       <CardList>
         {
           mealsToShow.map(meal => {
-            return <Card key={meal.idMeal} meal={meal} />
+            return <Card key={meal.idMeal} meal={meal} onClick={() => navigateToDetail(meal.idMeal)} />
           })
         }
       </CardList>

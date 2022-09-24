@@ -3,11 +3,24 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './containers/App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import MealDetail from './containers/MealDetail';
+import Nav from './components/Nav';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Nav />
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<App />} />
+        <Route path='detail'>
+          <Route path=':mealID' element={<MealDetail />} />
+        </Route>
+
+        <Route path='*' element={<Navigate to="/" replace />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
