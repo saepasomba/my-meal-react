@@ -6,8 +6,11 @@ export default function Nav() {
     <nav>
         <ul className='container'>
             <li>Home</li>
-            <li>My favourite</li>
+
         </ul>
+        <h3>
+          MyMeal
+        </h3>
     </nav>
   )
 }

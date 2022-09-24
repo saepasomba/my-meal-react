@@ -1,6 +1,7 @@
 .cardList {
     margin: 0 auto;
     display: grid;
+    justify-items: center;
     gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
 }

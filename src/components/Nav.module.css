@@ -1,18 +1,24 @@
 nav {
     position: fixed;
-    top: 0;
-    width: 100vw;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
     background-color: #FFC4C4;
-    color: #850E35;
     height: 3rem;
     overflow: hidden;
     z-index: 1;
+    border-radius: 25px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 nav ul {
     height: 100%;
     width: 90%;
-    margin: 0 auto;
 
     display: flex;
     gap: 0rem;
@@ -31,4 +37,5 @@ nav li {
 nav ul li:hover  {
     background-color: #FFF5E4;
     cursor: pointer;
+    border-radius: 35px;
 }

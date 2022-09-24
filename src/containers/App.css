@@ -1,5 +1,8 @@
 body {
   margin-top: 5rem;
+  min-height: 100vh;
+  background: linear-gradient(to top right, rgba(133,14,53,1) 0%, rgba(238,51,65,1) 100%);
+  color: #850E35;
 }
 
 .container {

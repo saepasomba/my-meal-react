@@ -6,14 +6,14 @@
     border-radius: 25px;
     overflow: hidden;
     cursor: pointer;
+    border: 2px solid #FFC4C4;
 }
 
 .mealCard p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     max-width: calc(80%);
     margin: 0 auto;
     padding: 1rem 0.8rem;
-
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
