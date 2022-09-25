@@ -5,7 +5,7 @@ export default function Nav() {
   return (
     <nav className='container'>
         <ul>
-            <li><a href='/'>Home</a></li>
+            <a href='/'><li>Home</li></a>
         </ul>
         <h3>
           MyMeal
