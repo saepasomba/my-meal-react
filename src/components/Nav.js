@@ -3,10 +3,9 @@ import style from './Nav.module.css'
 
 export default function Nav() {
   return (
-    <nav>
-        <ul className='container'>
-            <li>Home</li>
-
+    <nav className='container'>
+        <ul>
+            <li><a href='/'>Home</a></li>
         </ul>
         <h3>
           MyMeal
