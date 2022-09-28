@@ -9,3 +9,12 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+
+.loading {
+  display: flex;
+  justify-content: center;
+}
+
+.loading img {
+  width: 100px;
+}

@@ -1,0 +1,23 @@
+.category-list {
+    margin: 1rem auto;
+    display: flex;
+    gap: 0.5rem;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category {
+    background-color: #FFF5E4;
+    border-radius: 50px;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 100ms ease;
+}
+
+.category:hover, .active {
+    color: #FFF5E4;
+    background-color: transparent;
+    border: 1px solid #FFF5E4;
+}
