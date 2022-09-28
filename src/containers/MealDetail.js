@@ -7,14 +7,22 @@ import { useParams } from 'react-router-dom'
 export default function MealDetail() {
 
   const [meal, setMeal] = useState([])
+  const [ingredients, setIngredients] = useState([])
 
   const { mealID } = useParams()
 
   const getData = async() => {
     let response = await axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealID}`)
     let data = response.data.meals[0]
-    console.log(data)
     setMeal(data)
+
+    let tempIngredients = []
+    for (let i = 0; i <= 20; i++) {
+      if (data[`strIngredient${i}`]) {
+        tempIngredients.push([data[`strIngredient${i}`], data[`strMeasure${i}`]])
+      }
+    }
+    setIngredients(tempIngredients)
   }
 
   useEffect(() => {
@@ -35,6 +43,21 @@ export default function MealDetail() {
           <p>
             {meal.strInstructions}
           </p>
+        </section>
+        <section>
+          <h2>Ingredients</h2>
+          <ul>
+            {
+              ingredients.map(ingredient => {
+                return (
+                  <li>
+                    <span>{ingredient[0]}</span>
+                    <span>{ingredient[1]}</span>
+                  </li>
+                )
+              })
+            }
+          </ul>
         </section>
       </div>
     </div>
