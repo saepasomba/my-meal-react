@@ -51,8 +51,8 @@ export default function MealDetail() {
               ingredients.map((ingredient, i) => {
                 return (
                   <li key={i}>
-                    <span>{ingredient[0]}</span>
-                    <span>{ingredient[1]}</span>
+                    <span><p>{ingredient[0]}</p></span>
+                    <span><p>{ingredient[1]}</p></span>
                   </li>
                 )
               })
