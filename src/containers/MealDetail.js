@@ -48,9 +48,9 @@ export default function MealDetail() {
           <h2>Ingredients</h2>
           <ul>
             {
-              ingredients.map(ingredient => {
+              ingredients.map((ingredient, i) => {
                 return (
-                  <li>
+                  <li key={i}>
                     <span>{ingredient[0]}</span>
                     <span>{ingredient[1]}</span>
                   </li>
