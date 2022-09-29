@@ -85,7 +85,7 @@ function App() {
       {
         meals.length > 0 ? 
         <>
-          <CategoryList categories={categories} onClick={categoryPressed} isActive={categorySelected}/>
+          <CategoryList categories={categories.sort()} onClick={categoryPressed} isActive={categorySelected}/>
           <CardList>
             {
               mealsToShow.map(meal => {

@@ -1,4 +1,4 @@
-import style from './MealDetail.css'
+import './MealDetail.css'
 import loading from './loading.gif';
 
 import axios from 'axios'

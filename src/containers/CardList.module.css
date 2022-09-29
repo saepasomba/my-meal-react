@@ -1,5 +1,5 @@
 .cardList {
-    margin: 0 auto;
+    margin: 0 auto 5rem;
     display: grid;
     justify-items: center;
     gap: 1rem;

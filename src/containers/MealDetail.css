@@ -3,6 +3,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin-bottom: 5rem;
+    min-height: 100vh;
 }
 
 .content-right section {
@@ -36,4 +37,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 75%;
+}
+
+.loading {
+    min-height: 100vh;
 }

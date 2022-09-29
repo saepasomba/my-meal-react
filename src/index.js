@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import MealDetail from './containers/MealDetail';
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,6 +22,7 @@ root.render(
         <Route path='*' element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
+    <Footer />
   </React.StrictMode>
 );
 
